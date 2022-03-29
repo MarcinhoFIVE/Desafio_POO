@@ -1,21 +1,30 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package main;
 
-/**
- *
- * @author Marcio Darlan
- */
+import br.mdan.desafio.Curso;
+import br.mdan.desafio.Mentoria;
+import java.time.LocalDate;
+
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Curso curso1 = new Curso();
+        curso1.setTitulo("Curso Java");
+        curso1.setDescricao("Descricao Curso Java");
+        curso1.setCargaHoraria(8);
+        
+        Curso curso2 = new Curso();
+        curso2.setTitulo("Curso js");
+        curso2.setDescricao("Descricao Curso js");
+        curso2.setCargaHoraria(4);
+        
+        Mentoria mentoria = new Mentoria();
+        mentoria.setTitulo("Mentoria de Java");
+        mentoria.setDescricao("Descrição Mentoria Java");
+        mentoria.setData(LocalDate.now());
+        
+        System.out.println(curso1);
+        System.out.println(curso2);
+        System.out.println(mentoria);
     }
     
 }
